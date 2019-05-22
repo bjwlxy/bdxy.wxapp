@@ -1,0 +1,16 @@
+<!--pages/mine/mine.wxml-->
+<view calss="base-container">
+  <view class="mine-contaienr">
+    <view class="mine-avatar-box">
+      <image src="{{avatar}}" class="mine-avatar"></image>
+    </view>
+  </view>
+  <i-cell-group>
+    <i-cell title="个人信息" is-link value="{{userCode}}"></i-cell>
+    <i-cell title="绑定管理" is-link url="/pages/index/index"></i-cell>
+  </i-cell-group>
+  <i-panel class="mine-panel">
+    <i-cell title="关于我们" is-link></i-cell>
+  </i-panel>
+</view>
+<include src="../menu/menu" />

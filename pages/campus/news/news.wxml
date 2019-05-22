@@ -1,0 +1,4 @@
+<view>
+news
+</view>
+<include src="../../manu/manu.wxml"/> 

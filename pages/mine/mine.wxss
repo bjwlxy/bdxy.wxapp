@@ -1,0 +1,25 @@
+/* pages/mine/mine.wxss */
+.mine-panel{
+  display: block;
+  margin-top: 15px;
+}
+
+.mine-contaienr {
+  background-image: linear-gradient(to bottom, #00a2ea, #64cfef);
+  padding-top: 1rpx;
+  padding-bottom: 72rpx;
+}
+
+.mine-avatar {
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+}
+.mine-avatar-box{
+  text-align: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx
+}
+.about-us{
+  margin-top: 20rpx;
+}

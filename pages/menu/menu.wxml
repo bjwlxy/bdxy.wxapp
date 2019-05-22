@@ -1,0 +1,8 @@
+<view class="footer-manu">
+  <i-tab-bar color="#00a2ea" current="{{ tab_bar_current }}" bindchange="tabbarChange">
+    <i-tab-bar-item key="home" icon="homepage" current-icon="homepage_fill" title="校园"></i-tab-bar-item>
+    <i-tab-bar-item key="pocket" icon="task" current-icon="task_fill" title="口袋"></i-tab-bar-item>
+    <i-tab-bar-item key="notice" icon="remind" current-icon="remind_fill" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+  </i-tab-bar>
+</view>

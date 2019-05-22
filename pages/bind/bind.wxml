@@ -1,0 +1,24 @@
+<!--pages/bind.wxml-->
+<view wx:if="{{isRegister}}">
+  <view class="bind-bg">
+    <view class="bind-box">
+      <image src="{{avatar}}" class="bind-avatar"></image>
+    </view>
+    <!--
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    -->
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="bind-login"> 微信登录 </button>
+  </view>
+</view>
+<view wx:else>
+  <view>
+    <i-panel title="学号登录">
+      <i-input value="{{ value1 }}" title="学号" autofocus placeholder="请输入学号" />
+      <i-input value="{{ value2 }}" type="password" title="密码" placeholder="请输入密码" />
+    </i-panel>
+  </view>
+  <view>
+  </view>
+  <i-button bindclick="handleClick">下一步</i-button>
+  <i-button bindclick="toRegister">下一步</i-button>
+</view>

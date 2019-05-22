@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/pocket/pocket",
+    "pages/welcome/welcome",
+    "pages/mine/mine",
+    "pages/notice/notice",
+    "pages/register/register",
+    "pages/bind/bind"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00a2ea",
+    "navigationBarTitleText": "宝大微校园",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "i-tab-bar": "../../vendor/tab-bar/index",
+    "i-tab-bar-item": "../../vendor/tab-bar-item/index"
+  },
+  "tabBar": {
+    "color": "white",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home"
+      },
+      {
+        "pagePath": "pages/pocket/pocket"
+      },
+      {
+        "pagePath": "pages/notice/notice"
+      },
+      {
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 120000,
+    "downloadFile": 120000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于为您获取天气信息"
+    }
+  }
+}

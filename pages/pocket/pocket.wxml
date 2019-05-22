@@ -1,0 +1,72 @@
+<!--pages/pocket/pocket.wxml-->
+<view class="base-container">
+  <view class="pocket-container">
+    <view class="pocket-weather">
+      <view class="right wind">
+        <view>{{weatherData.wind}}</view>
+        <view>PM {{weatherData.pm25}}</view>
+      </view>
+      <view class="center city">
+        {{weatherData.currentCity}}
+      </view>
+      <view class="center temperature">
+        {{weatherData.temperature}}
+      </view>
+      <view class="center date">
+        {{weatherData.date}}</view>
+      <view class="center weatherdesc">
+        {{weatherData.weatherDesc}}
+      </view>
+    </view>
+  </view>
+  <i-cell-group>
+  <block wx:for="{{course}}">
+    <i-cell title="{{item.course}}" wx:if="{{item.course!=0}}" is-link url="/pages/index/index"></i-cell>
+  </block>
+  </i-cell-group>
+  <view class="grid">
+    <i-grid>
+      <i-row>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon size="24" type="activity" />
+            <i-grid-label>课表</i-grid-label>
+          </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon size="24" type="flag" />
+            <i-grid-label>成绩</i-grid-label>
+          </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon size="24" type="task" />
+            <i-grid-label>饭卡</i-grid-label>
+          </i-grid-icon>
+        </i-grid-item>
+      </i-row>
+      <i-row>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon size="24" type="collection" />
+            <i-grid-label>网课</i-grid-label>
+          </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon size="24" type="mobilephone" />
+            <i-grid-label>快递</i-grid-label>
+          </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <i-icon size="24" type="more" />
+            <i-grid-label>更多</i-grid-label>
+          </i-grid-icon>
+        </i-grid-item>
+      </i-row>
+    </i-grid>
+  </view>
+</view>
+<include src="../menu/menu" />

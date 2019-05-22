@@ -1,0 +1,9 @@
+/* pages/register/register.wxss */
+
+.register-container {
+  margin-top: 15rpx;
+}
+
+.register-title {
+  padding:20px 0 20px 30px;
+}

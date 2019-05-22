@@ -1,0 +1,6 @@
+<view class="register-container">
+  <view class="register-title">
+    <text>请使用微信注册您的微校园账户</text>
+  </view>
+  <i-button bindclick="doRegister" open-type="getUserInfo">微信快捷注册</i-button>
+</view>

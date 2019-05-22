@@ -1,0 +1,36 @@
+/* pages/pocket/pocket.wxss */
+.pocket-container{
+  background-image: linear-gradient(to bottom , #00a2ea,#64cfef);
+  padding-top: 1rpx;
+  padding-bottom: 72rpx;
+}
+.center{
+  text-align: center
+}
+.city{
+  color: #ffffff;
+  font-size:48rpx;
+}
+.temperature{
+  color: #ffffff;
+  font-size: 52rpx;
+  padding-top: 5rpx
+}
+.date{
+  color: #ffffff;
+  font-size: 36rpx
+}
+.weatherdesc{
+  color: #ffffff;
+  font-size: 36rpx
+}
+.right{
+  color: #ffffff;
+  padding-right: 30rpx;
+  text-align: right;
+  font-size: 30rpx;
+}
+.grid{
+  margin-top: 30rpx;
+  background-color: #ffffff
+}

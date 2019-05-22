@@ -1,0 +1,90 @@
+<!--index.wxml-->
+
+<view>
+  <view>
+    <view>
+    <view class="home-header">
+ <i-tabs current="{{ current_scroll }}" color="#00a2ea" scroll bindchange="handleChangeScroll">
+    <i-tab key="tab1" title="推荐"></i-tab>
+    <i-tab key="tab2" title="关注"></i-tab>
+    <i-tab key="tab3" title="学院"></i-tab>
+    <i-tab key="tab4" title="就业"></i-tab>
+    <i-tab key="tab5" title="学工"></i-tab>
+    <i-tab key="tab6" title="校友"></i-tab>
+    <i-tab key="tab7" title="创大"></i-tab>
+    <i-tab key="tab8" title="政策"></i-tab>
+    <i-tab key="tab9" title="风景"></i-tab>
+    <i-tab key="tab10" title="讲座"></i-tab>
+    <i-tab key="tab11" title="教学"></i-tab>
+    <i-tab key="tab12" title="党纪"></i-tab>
+    <i-tab key="tab13" title="学术"></i-tab>
+    <i-tab key="tab14" title="社团"></i-tab>
+    <i-tab key="tab15" title="科研"></i-tab>
+    <i-tab key="tab16" title="党团"></i-tab>
+    <i-tab key="tab17" title="校史"></i-tab>
+    <i-tab key="tab18" title="双创"></i-tab>
+    <i-tab key="tab19" title="招生"></i-tab>
+  </i-tabs>
+</view>
+     
+      <view class="weui-navbar navbar-background-color navar-fixed-to-top">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title navbar-text-color">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider navbar-slider-color" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);">
+        </view>
+      </view>
+
+      <view class="weui-tab__panel">
+        <block wx:for="{{newsList}}" wx:for-item="newsTypeItem" wx:key="typeID">
+          <view class="weui-tab__content weui-tab-content-padding" hidden="{{activeIndex != index}}">
+
+            <view class="my-weui-panel text-align_left front-page-edge">
+              <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text front-page-content" style='background-image: url("{{newsTypeItem.frontPage.imagePath}}");'>
+
+                  <view class='front-page-text-wrapper'>
+                    <view class="weui-media-box__desc front-page-title-font" data-id="{{-1}}" bindtap='tabToNavigate'>
+                      {{newsTypeItem.frontPage.title}}
+                    </view>
+                    <view class="weui-media-box__info front-page-subtitle-font">
+                      <view class="weui-media-box__info__meta">{{newsTypeItem.frontPage.source}}</view>
+                      <view class="weui-media-box__info__meta">{{newsTypeItem.frontPage.date}}</view>
+                    </view>
+                  </view>
+
+                </view>
+              </view>
+            </view>
+
+            <view wx:for="{{newsTypeItem.newsInfo}}" wx:key="id" class='text-align_left'>
+              <view class="my-weui-panel">
+                <view class="weui-panel__bd">
+
+                  <view class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                      <view class="weui-media-box__desc news-list-title-text-font" data-id="{{index}}" bindtap='tabToNavigate'>{{item.title}}</view>
+                      <view class="weui-media-box__info news-list-subtitle-text-font">
+                        <view class="weui-media-box__info__meta">{{item.source}}</view>
+                        <view class="weui-media-box__info__meta">{{item.date}}</view>
+                      </view>
+                    </view>
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg weui-media-box__hd_in-appmsg_image">
+                      <image class="weui-media-box__thumb" src="{{item.imagePath}}" data-id="{{index}}" bindtap='tabToNavigate' />
+                    </view>
+                  </view>
+
+                </view>
+              </view>
+            </view>
+
+          </view>
+        </block>
+      </view>
+
+    </view>
+  </view>
+</view>
+<include src="../menu/menu" />

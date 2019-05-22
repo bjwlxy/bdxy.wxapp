@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-steps": "../../vendor/steps/index",
+    "i-step": "../../vendor/step/index",
+    "i-button": "../../vendor/button/index",
+    "i-input": "../../vendor/input/index",
+    "i-panel": "../../vendor/panel/index"
+  }
+}

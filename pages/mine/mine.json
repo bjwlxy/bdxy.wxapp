@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+      "i-cell-group": "../../vendor/cell-group/index",
+      "i-cell": "../../vendor/cell/index",
+      "i-panel": "../../vendor/panel/index",
+      "i-icon": "../../vendor/icon/index",
+      "i-switch": "../../vendor/switch/index"
+  }
+}

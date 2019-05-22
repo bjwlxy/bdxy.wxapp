@@ -1,0 +1,3 @@
+<view class="launch-bg">
+  <image class="launch-bg-image" src="../../images/launch.jpg" mode="aspectFill"></image>
+</view>

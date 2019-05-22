@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "i-panel": "../../vendor/panel/index",
+    "i-row": "../../vendor/row/index",
+    "i-col": "../../vendor/col/index",
+    "i-tabs": "../../vendor/tabs/index",
+    "i-tab": "../../vendor/tab/index",
+    "i-card": "../../vendor/card/index"
+  }
+}

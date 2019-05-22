@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+        "i-swipeout": "../../vendor/swipeout/index",
+        "i-cell-group": "../../vendor/cell-group/index",
+        "i-cell": "../../vendor/cell/index",
+        "i-card": "../../vendor/card/index",
+        "i-icon": "../../vendor/icon/index",
+        "i-action-sheet": "../../vendor/action-sheet/index"
+  }
+}

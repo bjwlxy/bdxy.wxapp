@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "i-grid": "../../vendor/grid/index",
+    "i-grid-item": "../../vendor/grid-item/index",
+    "i-grid-icon": "../../vendor/grid-icon/index",
+    "i-grid-label": "../../vendor/grid-label/index",
+    "i-icon": "../../vendor/icon/index",
+    "i-col": "../../vendor/col/index",
+    "i-row": "../../vendor/row/index",
+    "i-cell-group": "../../vendor/cell-group/index",
+    "i-cell": "../../vendor/cell/index",
+    "i-panel": "../../vendor/panel/index"
+  }
+}
